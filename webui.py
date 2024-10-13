@@ -13,7 +13,7 @@ initialize.imports()
 initialize.check_versions()
 
 
-def create_api(app):
+def create_api(app: FastAPI):
     from modules.api.api import Api
     from modules.call_queue import queue_lock
 
